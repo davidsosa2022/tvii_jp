@@ -1,5 +1,5 @@
 <white-acr>a
-<gold-domain>https://davidsosa2022.github.io/Nintendo-TVii-Web/
-<white-domain>https://davidsosa2022.github.io/Nintendo-TVii-Web/
-<white-title-ID>000500301001310A
-<top-page>https://davidsosa2022.github.io/Nintendo-TVii-Web/
+<gold-domain>https://davidsosa2022.github.io/tvii_jp/
+<white-domain>https://davidsosa2022.github.io/tvii_jp/
+<white-title-ID>000500301001300A
+<top-page>https://davidsosa2022.github.io/tvii_jp/
