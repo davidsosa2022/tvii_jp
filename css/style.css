@@ -1,0 +1,71 @@
+@font-face {
+font-family: Nintendo_RodinNTLG-M;
+font-weight: 400;
+font-style: normal;
+     
+}
+	#Favorites { padding-left: 30px }
+	#Favorites { padding-right: 22px }
+        #TV { padding-right: 30px }
+        #Movies { padding-right: 25px }
+        #Sports { padding-right: 34px }
+        #TV Tag { padding-right: 30px }
+
+html, body {
+    margin: 0;
+    padding: 0px;
+    position: fixed;
+    background-color: #e6e6e6;
+}
+
+#search {
+	bottom: 0%;
+	right: 25%;
+	position: fixed;
+}
+
+			
+#exit {
+	position: fixed;
+	top: 0;
+	left: 0;
+        z-index: 3;
+}
+
+#search {
+	position: fixed;
+	top: 0;
+	right: 0%;
+        z-index: 5;
+}
+
+
+#top-bar {
+	position: fixed;
+        top: 0px;
+}
+
+#info-tab-1 {
+	position: fixed;
+        bottom: 0px;
+        z-index: 3;
+}
+
+
+#live {
+	position: fixed;
+        top: 0px;
+        z-index: 2;
+}
+
+#guide {
+	position: fixed;
+        top: 0px;
+        z-index: 2;
+}
+
+#favorites {
+	position: fixed;
+        top: 0px;
+        z-index: 2;
+}
