@@ -61,7 +61,7 @@
 
 <body onload="startTime()">
 
-<div id="tt" style="font-size:20px; position: fixed; bottom: 10px; right: 50px; z-index: 5;">></div>
+<div id="tt" style="font-size:20px; position: fixed; bottom: 12px; right: 50px; z-index: 5;">></div>
 
 <script>
 function startTime() {
@@ -81,15 +81,15 @@ if ( hour > 12 ) {
   hour = hour - 12;
   if ( hour == 12 ) {
     hour = checkTime(hour);
-  document.getElementById("tt").innerHTML = hour+":"+minute+":"+ss+" AM";
+  document.getElementById("tt").innerHTML = hour+":"+minute+" AM";
   }
   else {
     hour = checkTime(hour);
-    document.getElementById("tt").innerHTML = hour+":"+minute+":"+ss+" PM";
+    document.getElementById("tt").innerHTML = hour+":"+minute+" PM";
   }
 }
 else {
-  document.getElementById("tt").innerHTML = hour+":"+minute+":"+ss+" AM";;
+  document.getElementById("tt").innerHTML = hour+":"+minute+" AM";;
 }
 var time = setTimeout(startTime,1000);
 }
