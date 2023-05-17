@@ -65,12 +65,6 @@
 <div id="tt" style="font-size:20px; position: fixed; bottom: 6px; right: 50px; z-index: 5;">></div>
 
 <script>
-const weekday = ["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"];
-
-const d = new Date();
-let day = weekday[d.getDay()];
-document.getElementById("today").innerHTML = day;
-
 function startTime() {
   var date = new Date(),
       hour = date.getHours(),
@@ -100,6 +94,11 @@ else {
 }
 var time = setTimeout(startTime,1000);
 }
+const weekday = ["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"];
+
+const d = new Date();
+let day = weekday[d.getDay()];
+document.getElementById("today").innerHTML = day;
 </script>
 
 
