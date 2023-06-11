@@ -8,9 +8,8 @@
     position: fixed;
     top: 18px;
 	left: 140px;
-	font-size: 25px;
-	font-family: "Nintendo_RodinNTLG-DB";
-	color: 00000;
+	font-size: 24px;
+	color: #00000;
         z-index: 4;
 }
 
@@ -18,9 +17,8 @@
     position: fixed;
     top: 18px;
 	left: 360px;
-	font-size: 25px;
-	font-family: "Nintendo_RodinNTLG-DB";
-	color: FFFFFF;
+	font-size: 24px;
+	color: #FFFFFF;
         z-index: 4;
 }
 
@@ -28,9 +26,8 @@
     position: fixed;
     top: 18px;
 	left: 580px;
-	font-size: 25px;
-	font-family: "Nintendo_RodinNTLG-DB";
-	color: FFFFFF;
+	font-size: 24px;
+	color: #FFFFFF;
         z-index: 4;
 }
 
@@ -39,21 +36,38 @@
   <body>
 
   <div class="navbuttons">  
-      <a navi_target>
-      <img id="exit" src="img/Exit.png" onclick="vino.soundPlayEx('SE_COMMON_FINISH', 1);vino.exit()"></a>
+      <div id="top-bar"></div>
+
+      <div id="header-exit" onclick="vino.exit();"</div>
 
       <a navi_target href="pages/search.html">
       <img id="search" src="img/Search.png" onclick="vino.soundPlayEx('SE_HTML_TOUCH_ON', 1);"></a>
 
-      <img id="top-bar" src="img/topbar.png">
-
       <img id="info-tab-1" src="img/InfoTab1.png">
 
       <img id="live" src="img/live.png">
-    
-    
+        
   </div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<p>Did you know:
+Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
+Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
+
+Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
+Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
+Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
+Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
+Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
+Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
+Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
+</p>
+
+      <a href="pages/search.html" style="text-decoration:none" class="post-olv-button">Miiverseに投稿する</a>
+
   <table id="navstrings">
+    <div class="exitbtn" onclick="vino.exit();"</div>
     <div class="live-a">ライブ番組</div>
     <div onclick="window.location.href = 'pages/guide.html', vino.soundPlayEx('SE_HTML_TOUCH_ON', 1);" class="guide-a">テレビガイド</div>
     <div onclick="window.location.href = 'pages/favorites.html', vino.soundPlayEx('SE_HTML_TOUCH_ON', 1);" class="favorites-a">私のお気に入り</div>
@@ -63,7 +77,13 @@
 
 <div id="today" style="font-size:14px; position: fixed; bottom: 26px; right: 62px; z-index: 5;"></div>
 <div id="tt" style="font-size:18px; position: fixed; bottom: 6px; right: 50px; z-index: 5;"></div>
-
+<script>
+function openUrl()
+        {
+            // assigning a new URL to window.location.href
+            window.location.href = "https://google.com";
+        }
+</script>
 <script src="js/index-jp.js"></script>
 </body>
 </html>
