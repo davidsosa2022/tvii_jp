@@ -9,7 +9,6 @@ body {
     position: relative;
     font-family: nintendo_NTLG-DB_002;
     background-color: #e6e6e6;
-    white-space: nowrap;
     overflow-y: scroll;
     touch-action: pan-y;
     width: 854px;
