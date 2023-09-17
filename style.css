@@ -1,0 +1,138 @@
+@font-face {
+font-family: nintendo_NTLG-DB_002;
+font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: nintendo_NTLG-DB_002;
+    background-color: #e6e6e6;
+    white-space: nowrap;
+    overflow-y: scroll;
+    width: 854px;
+    text-overflow: ellipsis; 
+    -webkit-overflow-scrolling: touch;
+}
+
+a, div, li  {
+ text-decoration: none;
+}
+
+h1  {
+ display: inline;
+}
+
+
+.top-bar {
+  position: fixed;
+  width: 854px;
+  top: 0;
+  height: 62px;
+  border-bottom: 2px solid #d51a1a;
+  background: -webkit-linear-gradient(#fe846b, #f03d2d);
+  z-index: 1;
+}
+
+.exitbtn {
+  position: fixed;
+  top: -16px;
+  left: 0;
+  margin-left: -40px;
+  z-index: 10;
+  width: 115px;
+  height: 86px;
+  border: 1px solid black;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVmSURBVGhD7ZlLSCRHGMfHMfgalVV0GA9KUA+Dj6GNsIoIKj7YxaCHXBQ8ZG8qvhbRPYggBMFR1FyC5BSvgeQQVMjiYfUQPQR0mEhOUUZUWAXjCHNYZdT8v5ruceyufk2Pbg7+4KO7qrur//+umq76emzPPGONJHGrRSbiO4TASjZbCPErYpmVEse3iG8QdD/Ch5hE0P1U0TNQilhEZHo8nhdUEQqFwgcHB9To7wgv1SWAd4hXxcXFmeALqvD7/UFs6D5vEf9QHQ8tA0w8GnX19fUJqamprGHi6OgouLS0tAczqyhaNfEOor/GPSoKCwvZQyKurq7CuIcPD+sjiqomksWtnKj43t7eB+KJ7OzsNPRI7s7OTvb19bUTVX9EjpiGiR8ZGREKCgqyxTpGcnKyvaqqyrm/vx+6uLioR9WfiH/ZwRh4Bpj4xsbG0q6urjK5eImMjIyUysrK3N3d3XhNMPHDw8NCfn6+NO4fQCYEQXCGw2FbIBB4iSqFCZ6BSYh/2dnZ6aYGxDouFkww8UNDQ6riJUiD2+3Ow5C6hYlcVL2PHImgMFBRUTHT3d1dIRZ1cTgcKbgm1+fzGTXBxA8ODgpOp1NTfCxk4uTkJO3s7OxHsYqhMNDf3/+92rBRQ2aiGFXU1dfs4D0kdhLi20i83pPnUVJS8mJjY2NaLDIUQyQrKyvt7u7OZjby8vIyBwYGBAyrRjTDXr2swQi0v0jH6Bw6l9eGXpC2SHP3KAzwLjQaJIyeLoS60ZRkQhLvpmPxipdCDs9AQH6RmZBMYHzT74hMLNJ+IsQjAkxkDIrfQGtr6yY2XQhFdxmF3k7V1dUuvDVsOTk5NJd8xet+k9DM/Hp9fZ0mtijcmXh   2dla4ubn5YLfbozNjPOAHHaZtSkqKqZeCnNvb2yBep03j4+O0PnqA6lIiUSasoiWe0FzMSSaSkpI+iwmMeU3xhN5q1DY9PS2gFz5g96lNBPH0myYmJlTFE7oGCDKBXnhKE0E8fV3xhCEDBJnA5ilM0NvGkHjCsAGCTODJPKaJIHrasHjClAHiEU2YFk+YNkBgtfoKC6sVs4s+NSj7wkKwe3V19RexyjC8fECP0r29vcnT09NPyAVcYp0lVlZW/t7c3PwSu9ysSwuzBli2VlRU5EIvePQSHqMgdc09PDwMXV5eqqaOapgxEBXf09MjWF0exEIPory83Ilk5dP5+XkdqgybMGqAia+trS3t6OgoS6R4CTKBpMhFqePx8TE3/+VhxEBUfFtbm26ebBW8HFj+a9SEnoEH4iNVj48ZE1oGmPiamponFS8hmUAir2lCzUBUPBKcJxcvYcQEz0BUfEtLy2cTL4FXbB4SI1UTPAM/QHxZc3NzIsTTsoBSQEsTXoyJMhTpy3gUxVLC4/H81d7ebvjDlgY+LDWaaAfDgNZO0uf5uFlbW9vz+/2VYpGheCU2NDSUYrEm/xpgKpCIMPFTU1NBCtqnOt65ZoK0iTKjKAw4HA6rXw+W09PTmXixbKN9r9dbhV1Lf4rwtPG+C1mJ5ZmZmTex4mOhY3SO7BpTIUdhAF29wbtQL8AynvIb1ogG4jlxmSBtkVbu4S0L3uJkykm5jaiEIfESdC5dI2tDL6hX6Z+aB3ATmrGxMcNZF85bnp+fNyw+ltHR0Z+QhdGfe3qwbG1ubk6RralmZGQCXaZnIm7xEmQCGy0TQbvdzhVPqK6Ftra2PtbX17/HE65FkTcRWRZPbG9v/1ZXV0fZGG+eCED8azXxhNZijpnArPwzdskE3YSg34d3YWFBMR7jhUxgxUujgUywVyXusYER0IT7KL5IP/N/Iq7PKjKkNmLbkmYc5czzTCw223/6KHRmAyZc3AAAAABJRU5ErkJggg==') no-repeat 53px
+  26px, -webkit-gradient(linear, left top, left bottom, from(#646464), color-stop(0.98, #323232), to(#000000)) 0 0;
+  -webkit-border-radius: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.menubtn {
+  position: fixed;
+  top: -16px;
+  right: 0;
+  margin-right: -40px;
+  z-index: 10;
+  width: 115px;
+  color: black;
+  font-size: 12px;
+  line-height: 11.7;
+  text-align: left;
+  height: 86px;
+  border: 1px solid #e6e6e6;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARISURBVGhD7ZldSBxXFMevru2a+BklatRui9UlmBcRkeQhWDClFqtmxQpFX2T1pQh+4JNYVESQPrgKUhCkvtmYiiIuSKGEPIgKUjCtWaooolVBMKnfruu6m/+Znamz7szWdc24mPnBn3vumcnknnvvOfdmw1RUVNwI4tvzfGswGJ47HA5GGhsbq4fP5HoUeGj4VkxncXFxJxlOp5OTXq//amFhIQqu38gfaHisRElJiZNmnwYvrATZQUFBtCJyK3etXCaIf4xGYzL5xBLeE9tyPsE2m820RWmr+kUw316YysrKZN70m4KCgjre9AufgwhE1CACBZ8TGzmB7llC9/f3+1SxioqK/vv+VVU8dSXEEt4T23I+wVZXQoQaRKCgJjbpQyqxdOUPgT7ieu74HYTfKyFIeE9sy/kE+yaVWApCLJ8JxMT2OZhrC4K21MnJCZkJ0D2R7kLhEOXQhYJRPAga/PHxMbNarcxgMLCNjY3fd3Z2Zvf39y1bW1tTi4uLw21tbd/j1VSIgpH6HcANj0jfU4mlWbVD2tzcXGteXh6rqqpi4eE0RmkQ3FJOTk798vLyFLpvoVPugQRKrQSV1o8hXXl5OautrfUaAJGYmPj57OzsLzqd7gt0oyHZsfq9EoKE98S22Hd0dMSys7NZY2Mj962Lgq32b2xsbBHMGcjKOc+hyEpQMAcHB6yiosItgPX1ddbe3s49F2hubuYtF1FRUXe6u7srYNJqSEavSBB2u52lpqbSFuE9LpKSktjp6SkXDNHV1cUKCws5W0xZWdk3aKhqSSa5YiuRkZHB99yh/DCZTGxvb48tLS2xzMxM/skZWq02Ak085FsQIyMja6Ojo6XIgzXe5RcJCXQ  ceBIZGcmQvKy1tZU1NTVJ5ksIQKOFJMfr4RwaGjINDw+XwvwE+pVas9lcj2D8+kFZvO/PU1NTw50b8fE02Z5QYfDGxcvEGT/yrS9E9/b2fmk0Gj/j+x5UV1eznp4evucOKps9IiLiKcwX1OWcCkMT9WlLS8sznNROJLmk6urqJP2k+fn5Q3zja+gWffA6oCDi0tPTG1dWVhxSg/QmCnxgYGAV33gESf17RDHoeM7v6+tb3t7elhysnKanpx0pKSkt+PP0Q7ZkYv/v5eqKoHuPbWZmxpaVlfU4JiZGExoa6noiAwJguHawiYmJvwYHB3+CaxHirr3nUSoIKi9W3FQPLBaLNi0tLf3w8DAkLCyMaTQaFhzsmmCqYDabjW1ubrK5uTk2OTn5uqGh4Qc8+gPahyTL1GWq02Whv4v+yywDl78nHR0d3+n1eh0OMjoD3EAQu7gdvxwfH/8Z3UnI6y1WySAImvLbEN0/7kMP8vPzHyLpdTjPNEj8HWyf16urq6/w7E/ob2gbkg2AUDoIAZp9Kpe0MnFQJERb+xh6w2sXskHypyTPdQUhQCtDEnKT9jzNOg3c+zGtoqJyk2HsHSDdawj0J6OYAAAAAElFTkSuQmCC') no-repeat 20px
+  20px, -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(0.5, #ffffff), color-stop(0.7, #ffffff), color-stop(0.96, #ffffff), to(#e6e6e6)) 0 0;
+  -webkit-border-radius: 19px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+.menubtn:before {
+ content:"\00a0\00a0\00a0\00a0";
+}
+
+.menu-text {
+  position: fixed;
+  right: 0%;
+  top: 45px;
+  margin-right: 6px;
+  z-index: 10;
+  color: black;
+  font-size: 14px;
+}
+
+.info-tab-1 {
+position: fixed;
+bottom: 0px;
+z-index: 3;
+width: 854px;
+height: 50px;
+text-align: center;
+line-height: 3;
+color: #040404;
+font-size: 16px;
+border-top: 1px solid #fefefe;
+outline: 2px solid #cdcdcd;
+background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f1f1f1));
+-webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+#scroll-programs {
+   position: relative;
+   margin: 0;
+   top: 0;
+   right: 0;
+   scroll-behavior: smooth;
+   width: 372px;
+   height: 365px;
+   background: white;
+   display: block;
+   outline: 1px solid #000;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   padding: 10px;
+}
+
+#scroll-programs::-webkit-scrollbar {
+    width: 40px;
+    border-radius: 20px;
+}
+
+/* Track */
+#scroll-programs::-webkit-scrollbar-track {
+    background: #a5a5a5;
+    border-radius: 20px;
+    border: 16px solid transparent;
+    background-clip: content-box;   /* THIS IS IMPORTANT */
+}
+
+/* Handle */
+#scroll-programs::-webkit-scrollbar-thumb:vertical {
+    padding-top: 10px;
+    background: black url('http://i.minus.com/jbcOb9d7Bb1p6Y.png') no-repeat;
+    border-radius: 10px;
+    height: 80px;
+}
