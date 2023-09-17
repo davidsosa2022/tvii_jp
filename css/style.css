@@ -12,8 +12,8 @@ body {
     white-space: nowrap;
     overflow-y: scroll;
     width: 854px;
-    -webkit-overflow-scrolling: touch !important;
-    overflow-scrolling: touch !important;
+    text-overflow: ellipsis; 
+    -webkit-overflow-scrolling: touch;
 }
 
 a, div, li  {
@@ -65,6 +65,9 @@ a, div, li  {
   cursor: pointer;
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
+.menubtn:before {
+ content:"\00a0\00a0\00a0\00a0";
+}
 
 .menu-text {
   position: fixed;
@@ -101,6 +104,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f
    width: 372px;
    height: 365px;
    background: white;
+   display: block;
    outline: 1px solid #000;
    overflow-y: scroll;
    overflow-x: hidden;
@@ -109,6 +113,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f
 
 #scroll-programs::-webkit-scrollbar {
     width: 40px;
+    -webkit-border-radius: 20px;
 }
 
 /* Track */
