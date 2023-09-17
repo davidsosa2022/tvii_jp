@@ -20,6 +20,11 @@ a, div, li  {
  text-decoration: none;
 }
 
+h1  {
+ display: inline;
+}
+
+
 .top-bar {
   position: fixed;
   width: 854px;
@@ -104,7 +109,6 @@ background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f
    width: 372px;
    height: 365px;
    background: white;
-   display: block;
    outline: 1px solid #000;
    overflow-y: scroll;
    overflow-x: hidden;
@@ -113,13 +117,13 @@ background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f
 
 #scroll-programs::-webkit-scrollbar {
     width: 40px;
-    -webkit-border-radius: 20px;
+    border-radius: 20px;
 }
 
 /* Track */
 #scroll-programs::-webkit-scrollbar-track {
     background: #a5a5a5;
-    -webkit-border-radius: 20px;
+    border-radius: 20px;
     border: 16px solid transparent;
     background-clip: content-box;   /* THIS IS IMPORTANT */
 }
@@ -128,6 +132,6 @@ background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f
 #scroll-programs::-webkit-scrollbar-thumb:vertical {
     padding-top: 10px;
     background: black url('http://i.minus.com/jbcOb9d7Bb1p6Y.png') no-repeat;
-    -webkit-border-radius: 10px;
+    border-radius: 10px;
     height: 80px;
 }
