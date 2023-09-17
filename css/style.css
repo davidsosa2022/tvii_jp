@@ -20,6 +20,12 @@ a, div, li  {
  text-decoration: none;
 }
 
+button  {
+ display: block;
+ width: 80px;
+ height: 60px;
+}
+
 .top-bar {
   position: fixed;
   width: 854px;
@@ -93,6 +99,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f
    right: 10px;
    float: right;
    scroll-behavior: smooth;
+   scroll-snap-stop: normal;
    width: 375px;
    height: 385px;
    background: white;
