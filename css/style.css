@@ -11,6 +11,7 @@ body {
     background-color: #e6e6e6;
     white-space: nowrap;
     overflow-y: scroll;
+    touch-action: pan-y;
     width: 854px;
     text-overflow: ellipsis; 
     -webkit-overflow-scrolling: touch;
@@ -109,6 +110,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f
    width: 372px;
    height: 365px;
    background: white;
+   vertical-align: middle;
    outline: 1px solid #000;
    overflow-y: scroll;
    overflow-x: hidden;
@@ -117,13 +119,13 @@ background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f
 
 #scroll-programs::-webkit-scrollbar {
     width: 40px;
-    border-radius: 20px;
+    border-radius: 100px;
 }
 
 /* Track */
 #scroll-programs::-webkit-scrollbar-track {
     background: #a5a5a5;
-    border-radius: 20px;
+    border-radius: 100px;
     border: 16px solid transparent;
     background-clip: content-box;   /* THIS IS IMPORTANT */
 }
@@ -133,5 +135,5 @@ background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f
     padding-top: 10px;
     background: black url('http://i.minus.com/jbcOb9d7Bb1p6Y.png') no-repeat;
     border-radius: 10px;
-    height: 80px;
+    height: 90px;
 }
