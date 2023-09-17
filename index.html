@@ -1,89 +1,34 @@
 <html>
 <head>
-  <title>ニンテンドーTVii - JP</title>
+  <title>ニンテンドーTVii</title>
   <link rel="stylesheet" href="css/style.css">
-<style>
-
-.live-a {
-    position: fixed;
-    top: 18px;
-	left: 140px;
-	font-size: 24px;
-	color: #00000;
-        z-index: 4;
-}
-
-.guide-a {
-    position: fixed;
-    top: 18px;
-	left: 360px;
-	font-size: 24px;
-	color: #FFFFFF;
-        z-index: 4;
-}
-
-.favorites-a {
-    position: fixed;
-    top: 18px;
-	left: 580px;
-	font-size: 24px;
-	color: #FFFFFF;
-        z-index: 4;
-}
-
-</style>
 </head>
-  <body>
+  <body onload="">
 
-  <div class="navbuttons">  
-      <div id="top-bar"></div>
+  <div id="wrapper">
 
-      <div id="header-exit" onclick="vino.exit();"</div>
+  <div class="navbuttons">
+      <a class="top-bar"></a>
+      <a class="menubtn" href="pages/menu.html">⠀⠀メニュー</a>
+      <a class="exitbtn"></a>
+      <a class="info-tab-1">現在最も人気のあるプログラムがここに表示されます</a>
 
-      <a navi_target href="pages/search.html">
-      <img id="search" src="img/Search.png" onclick="vino.soundPlayEx('SE_HTML_TOUCH_ON', 1);"></a>
+      <div class="menu-section">  
+      <span class="live-label">ライブ番組</span>
+      <span class="guide-label">テレビガイド</span>
+      <span class="favorites-label">私のお気に入り</span>
+      </div>
 
-      <img id="info-tab-1" src="img/InfoTab1.png">
+      <div id="today" class="day-sect monday">月曜日</div>
+      <div id="tt" class="time-sect">12:00</div>
+   </div>
 
-      <img id="live" src="img/live.png">
-        
+  <div id="scroll-programs">
+   <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>  <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>  <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>  <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>  <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>  <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>  <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>  <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>  <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>  <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>  <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>  <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>  <h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><h1>AAAAAAAAAAA</h1><BR>
   </div>
 
-<br><br><br><br><br><br><br><br><br><br>
+</div>
 
-<p>Did you know:
-Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
-Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
-
-Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
-Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
-Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
-Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
-Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
-Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
-Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse Miiverse 
-</p>
-
-      <a href="pages/search.html" style="text-decoration:none" class="post-olv-button">Miiverseに投稿する</a>
-
-  <table id="navstrings">
-    <div class="exitbtn" onclick="vino.exit();"</div>
-    <div class="live-a">ライブ番組</div>
-    <div onclick="window.location.href = 'pages/guide.html', vino.soundPlayEx('SE_HTML_TOUCH_ON', 1);" class="guide-a">テレビガイド</div>
-    <div onclick="window.location.href = 'pages/favorites.html', vino.soundPlayEx('SE_HTML_TOUCH_ON', 1);" class="favorites-a">私のお気に入り</div>
-  </table>
-
-<body onload="startTime()">
-
-<div id="today" style="font-size:14px; position: fixed; bottom: 26px; right: 62px; z-index: 5;"></div>
-<div id="tt" style="font-size:18px; position: fixed; bottom: 6px; right: 50px; z-index: 5;"></div>
-<script>
-function openUrl()
-        {
-            // assigning a new URL to window.location.href
-            window.location.href = "https://google.com";
-        }
-</script>
-<script src="js/index-jp.js"></script>
+<script type="text/javascript" src="js/index-jp.js"></script>
 </body>
 </html>
