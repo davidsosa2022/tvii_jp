@@ -90,7 +90,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f
    position: relative;
    margin: 0;
    top: 0;
-   right: 0;
+   right: 10px;
    float: right;
    scroll-behavior: smooth;
    width: 375px;
@@ -107,12 +107,22 @@ background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f
  display: inline;
 }
 
-.separator {
+.separator-1 {
     position: absolute;
-    right: 43px;
+    right: 53px;
     z-index: 1;
     display: block;
     border-left: 2px solid white;
+    width: 10px;
+    height: 385px;
+    background: #e6e6e6;
+}
+
+.separator-2 {
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    display: block;
     width: 10px;
     height: 385px;
     background: #e6e6e6;
