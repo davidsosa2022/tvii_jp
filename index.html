@@ -1,37 +1,128 @@
 <html>
 <head>
   <title>ニンテンドーTVii</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/vino_en.css">
 </head>
   <body onload="">
 
-  <div id="wrapper">
+  <div class="wrapper_home">
 
-  <div class="navbuttons">
+  <menu class="menu-buttons">
       <a class="top-bar"></a>
-      <a class="menubtn" href="pages/menu.html">メニュー</a>
-      <a class="exitbtn"></a>
-      <a class="info-tab-1">現在最も人気のあるプログラムがここに表示されます</a>
+      <a onmousedown="vino.soundPlay('SE_COMMON_TOUCH_ON'), tvii.addHover(true, this)" onmousemove="tvii.addHover(true, this)" onmouseout="vino.soundPlay('SE_COMMON_TOUCH_CANCEL'), tvii.addHover(false, this)" onmouseup="tvii.addHover(false, this)" href="javascript:void(0);" navi_target class="menubtn" data-sound="SE_A_DECIDE_TOUCH_OFF">Menu</a>
+      <a onmousedown="vino.soundPlay('SE_COMMON_TOUCH_ON'), tvii.addHover(true, this)" onmousemove="tvii.addHover(true, this)" onmouseout="vino.soundPlay('SE_COMMON_TOUCH_CANCEL'), tvii.addHover(false, this)" onmouseout="vino.soundPlay('SE_COMMON_TOUCH_CANCEL'), tvii.addHover(false, this)" href="javascript:void(0);" navi_target class="exitbtn" onclick="vino.exit()" data-sound="SE_COMMON_FINISH_TOUCH_OFF"></a>
+      
+      <a class="info-tab">Programs being shown are currently live.</a>
+
+      <div class="day-info">
+        <div class="date-day monday">Monday</div>
+        <div class="date-time">12:00</div>
+      </div>
 
       <div class="menu-section">  
-      <span class="live-label">ライブ番組</span>
-      <span class="guide-label">テレビガイド</span>
-      <span class="favorites-label">私のお気に入り</span>
+      <span class="live-label">Live</span>
+      <span class="guide-label">Guide</span>
+      <span class="favorites-label">Favorites</span>
       </div>
-      <button onclick="vino.lyt_drawFixedFrame(200, 200, 400, 900)">Draw Lyt Box</button>
 
-      <div id="today" class="day-sect monday">月曜日</div>
-      <div id="tt" class="time-sect">12:00</div>
-   </div>
+   </menu>
 
-  <a class="separator-1"></a>
-  <div id="scroll-programs">
-
+  <section class="scroll-programs">
+  
+  <a href="#" class="program 1">
+  <div class="live-program">
+  <span class="show-type news">News</span>
+  <span class="channel-name">FOX News</span>
+  <span class="program-name">Fox Report with Jon Scott</span>
+  <span class="program-time">Starts in 15 minutes</span>
   </div>
-  <a class="separator-2"></a>
+  </a>
+
+  <a href="#" class="program 1">
+    <div class="live-program">
+    <span class="show-type drama">Drama/Soap</span>
+    <span class="channel-name">Canal 5</span>
+    <span class="program-name">The Rose of Guadalupe</span>
+    <span class="program-time">Starts in 2 hours</span>
+    </div>
+    </a>
+
+    <a href="#" class="program 1">
+      <div class="live-program">
+      <span class="show-type documentary">Docum</span>
+      <span class="channel-name">FOX News</span>
+      <span class="program-name">Fox Report with Jon Scott</span>
+      <span class="program-time">Starts in 15 minutes</span>
+      </div>
+      </a>
+
+      <a href="#" class="program 1">
+        <div class="live-program">
+        <span class="show-type sitcom">Sitcom/Comedy</span>
+        <span class="channel-name">FOX News</span>
+        <span class="program-name">Fox Report with Jon Scott</span>
+        <span class="program-time">Starts in 15 minutes</span>
+        </div>
+        </a>
+
+        <a href="#" class="program 1">
+          <div class="live-program">
+          <span class="show-type sitcom">Sitcom/Comedy</span>
+          <span class="channel-name">FOX News</span>
+          <span class="program-name">Fox Report with Jon Scott</span>
+          <span class="program-time">Starts in 15 minutes</span>
+          </div>
+          </a>
+
+          <a href="#" class="program 1">
+            <div class="live-program">
+            <span class="show-type sitcom">Sitcom/Comedy</span>
+            <span class="channel-name">FOX News</span>
+            <span class="program-name">Fox Report with Jon Scott</span>
+            <span class="program-time">Starts in 15 minutes</span>
+            </div>
+            </a>
+
+            <a href="#" class="program 1">
+              <div class="live-program">
+              <span class="show-type sitcom">Sitcom/Comedy</span>
+              <span class="channel-name">FOX News</span>
+              <span class="program-name">Fox Report with Jon Scott</span>
+              <span class="program-time">Starts in 15 minutes</span>
+              </div>
+              </a>
+
+              <a href="#" class="program 1">
+                <div class="live-program">
+                <span class="show-type documentary">Docum</span>
+                <span class="channel-name">FOX News</span>
+                <span class="program-name">Fox Report with Jon Scott</span>
+                <span class="program-time">Starts in 15 minutes</span>
+                </div>
+                </a>
+          
+                <a href="#" class="program 1">
+                  <div class="live-program">
+                  <span class="show-type sitcom">Sitcom/Comedy</span>
+                  <span class="channel-name">FOX News</span>
+                  <span class="program-name">Fox Report with Jon Scott</span>
+                  <span class="program-time">Starts in 15 minutes</span>
+                  </div>
+                  </a>
+          
+                  <a href="#" class="program 1">
+                    <div class="live-program">
+                    <span class="show-type sitcom">Sitcom/Comedy</span>
+                    <span class="channel-name">FOX News</span>
+                    <span class="program-name">Fox Report with Jon Scott</span>
+                    <span class="program-time">Starts in 15 minutes</span>
+                    </div>
+                    </a>
+                    
+  </section>
 
 </div>
 
-<script type="text/javascript" src="js/index-jp.js"></script>
+<script type="text/javascript" src="js/vino_en.js"></script>
 </body>
 </html>
