@@ -1390,8 +1390,10 @@ function prepareMiiverseModal() {
         closeMiiverseModal();
         };
 
-
-        miiverseRequest.setRequestHeader('X-Nintendo-ParamPack', vino.olv_getParameterPack());
+        miiverseRequest.setRequestHeader('content-type', 'application/xml');
+        miiverseRequest.setRequestHeader('user-agent', vino.olv_getUserAgent().toString());
+        miiverseRequest.setRequestHeader('x-nintendo-parampack', vino.olv_getParameterPack().toString());
+        miiverseRequest.setRequestHeader('x-nintendo-servicetoken', vino.olv_getServiceToken().toString());
         miiverseRequest.send();
     }
     if (vino.olv_isEnabled() && sessionStorage.getItem("olvPostState") === "enabled") {
@@ -1476,10 +1478,10 @@ function addEmpathy(miitooEvt) {
                 miitooEvt.classList.remove("adding");
             }
         };
-        miitooReq.setRequestHeader('Content-Type', 'application/xml');
-        miitooReq.setRequestHeader('X-Nintendo-ParamPack', vino.olv_getParameterPack());
-        miitooReq.setRequestHeader('X-Nintendo-ServiceToken', vino.olv_getServiceToken());
-        miitooReq.setRequestHeader('User-Agent', vino.olv_getUserAgent());
+        miitooReq.setRequestHeader('content-type', 'application/xml');
+        miitooReq.setRequestHeader('user-agent', vino.olv_getUserAgent().toString());
+        miitooReq.setRequestHeader('x-nintendo-parampack', vino.olv_getParameterPack().toString());
+        miitooReq.setRequestHeader('x-nintendo-servicetoken', vino.olv_getServiceToken().toString());
         miitooReq.send();
     } else{
         vino.soundPlayVolume("SE_WORD_MII_1", 25);
