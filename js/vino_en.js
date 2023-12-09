@@ -379,7 +379,7 @@ vino.loading_setIconRect(180, 160, 120, 120);
     }
 }
 
-const vinoClientUrl = 'https://davidsosa2022.github.io/tvii_jp';
+const vinoClientUrl =  window.location.origin;
 
 document.addEventListener('DOMContentLoaded', function () {
     var bodyAttribute = document.body.getAttribute('data-page');
@@ -1038,6 +1038,7 @@ if (showQuery !== null) {
     };
 
     showReq.onload = function () {
+    document.querySelector('.miiverse-button').removeAttribute('disabled');
     vino.loading_setIconAppear(false);
     };
 
@@ -1488,10 +1489,7 @@ function addEmpathy(miitooEvt) {
     } 
 }
 
- function doThing(inputPostMiiverse) {
-    var postContent = inputPostMiiverse.value;
-    vino.olv_postText(postContent, document.querySelector('.program-content').getAttribute('data-miiverse-topic-tag'), 1, false, document.querySelector('.program-content').getAttribute('data-miiverse-search-key'),'','','','' );
-}
+
 
 // other set of functions
 function playSoundOnce(soundEffect) {
