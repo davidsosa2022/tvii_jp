@@ -1390,10 +1390,8 @@ function prepareMiiverseModal() {
         closeMiiverseModal();
         };
 
-        miiverseRequest.setRequestHeader('Content-Type', 'application/xml');
-        miiverseRequest.setRequestHeader('User-Agent', vino.olv_getUserAgent());
+
         miiverseRequest.setRequestHeader('X-Nintendo-ParamPack', vino.olv_getParameterPack());
-        miiverseRequest.setRequestHeader('X-Nintendo-ServiceToken', vino.olv_getServiceToken());
         miiverseRequest.send();
     }
     if (vino.olv_isEnabled() && sessionStorage.getItem("olvPostState") === "enabled") {
