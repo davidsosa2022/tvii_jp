@@ -379,7 +379,7 @@ vino.loading_setIconRect(180, 160, 120, 120);
     }
 }
 
-const vinoClientUrl = window.location.origin;
+const vinoClientUrl = 'https://davidsosa2022.github.io/tvii_jp';
 
 document.addEventListener('DOMContentLoaded', function () {
     var bodyAttribute = document.body.getAttribute('data-page');
