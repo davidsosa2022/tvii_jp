@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <title>Nintendo TVii</title>
+  <link rel="stylesheet" href="css/vino_en.css">
+  <script type="text/javascript" src="js/vino_en.js"></script>
+</head>
+  <body data-page="menu-page">
+<div class="wrapper_home">
+  <menu class="menu-buttons">
+<div class="menu-popup">
+  <section class="menu-tab">
+    <div class="search-section">
+     <input type="text" navi_mouse href="javascript:void(0)" onmousedown="vino.soundPlay('SE_CMN_TOUCH_ON')" navi_target class="search_input" placeholder="Search for programs or actors..." vino_suggest/>
+     <select name="filter_genre" class="filter_genre" navi_mouse onmousedown="vino.soundPlay('SE_CMN_TOUCH_ON'), addHover(true, this)" onmouseout="addHover(false, this)" href="javascript:void(0);" onmouseup="addHover(false, this)" navi_target data-sound="SE_A_SWITCH_TOUCH_OFF">
+      <option value="all">Filter by Genre</option>
+      <option value="all">All</option>
+      <option value="actors">Actors</option>
+      <option value="action">Action</option>
+      <option value="all_ages">All Ages</option>
+      <option value="adult_comedy">Adult Comedy</option>
+      <option value="drama_serious">Adult Drama</option>
+      <option value="comedy">Comedy</option>
+      <option value="drama">Drama/Soap opera</option>
+      <option value="romance">Romance</option>
+      <option value="musical">Musical</option>
+      <option value="sports_basketball">Sports - Basketball</option>
+      <option value="sports_baseball">Sports - Baseball</option>
+      <option value="sports_football">Sports - Football</option>
+      <option value="sports_football">Sports - Soccer</option>
+      <option value="sports_rugby">Sports - Rugby</option>
+      <option value="sports_boxing">Sports - Boxing</option>
+      <option value="sports_tennis">Sports - Tennis</option>
+      <option value="sports_hockey">Sports - Hockey</option>
+      <option value="horror">Horror/Gore</option>
+      <option value="variety">Variety Shows</option>
+      <option value="late_day_show">Late Night/Day Show</option>
+    </select>
+  </div>
+  <div class="buttons-section">
+    <a navi_mouse onmousedown="vino.soundPlay('SE_CMN_TOUCH_ON'), addHover(true, this)" onmouseout="addHover(false, this)" href="javascript:void(0);" onmouseup="addHover(false, this)" navi_target class="favorites_settings" data-sound="SE_A_DECIDE_TOUCH_OFF">Favorites Settings</a>
+    <a navi_mouse onmousedown="vino.soundPlay('SE_CMN_TOUCH_ON'), addHover(true, this)" onmouseout="addHover(false, this)" href="javascript:void(0);" onmouseup="addHover(false, this)" navi_target class="electronic_manual" data-sound="SE_A_DECIDE_TOUCH_OFF">Electronic Manual</a>
+    <a navi_mouse onmousedown="vino.soundPlay('SE_CMN_TOUCH_ON'), addHover(true, this)" onmouseout="addHover(false, this)" href="javascript:void(0);" onmouseup="addHover(false, this)" navi_target class="app_settings" data-sound="SE_A_DECIDE_TOUCH_OFF">App Settings</a>
+    <a navi_mouse onmousedown="vino.soundPlay('SE_CMN_TOUCH_ON'), addHover(true, this)" onmouseout="addHover(false, this)" href="javascript:void(0);" onmouseup="addHover(false, this)" navi_target class="back_button" onclick="goBack()" data-sound="SE_CLOSE_TOUCH_OFF"> Back</a>
+  </div>
+  </section>
+</div>
+
+ </menu>
+
+</div>
+</body>
+</html>
