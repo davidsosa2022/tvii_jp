@@ -1,0 +1,39 @@
+<vino_request>
+<content>
+
+<show>
+<show_name>Leo</show_name>
+<show_image>img/ex.jpg</show_image>
+<streaming_service>Netflix</streaming_service>
+<show_id>tt5755238</show_id>
+<show_description>The last year of elementary school as seen through the eyes of a class pet. A jaded 74-year-old lizard named Leo has been stuck in the same Florida classroom for decades with his turtle terrarium-mate. When he learns that he only has one year left to live, he plans to escape to experience life on the outside, but instead gets caught up in his anxious students' problems--such as an impossibly mean substitute teacher.</show_description>
+<show_type>Animated Comedy</show_type>
+<is_movie>true</is_movie>
+</show>
+
+
+<show>
+<show_name>Aqua Teen Hunger Force</show_name>
+<show_image>img/ex2.jpg</show_image>
+<streaming_service>Amazon Prime Video</streaming_service>
+<show_id>tt0297494</show_id>
+<show_description>The series tells the bizarre misadventures of an anthropomorphic fast food team called the Aqua Teen Hunger Force, made up of Master Shake (A milkshake), Frylock (A box of fries) and Meatwad (A piece of ground beef), who live day to day with their grumpy neighbor Carl Brutananadilewski, an obese and grumpy forty-year-old. </show_description>
+<show_type>Adult Comedy</show_type>
+<is_movie>false</is_movie>
+</show>
+
+<show>
+<show_name>South Park: Bigger, Longer and Uncut</show_name>
+<show_image>img/ex1.jpg</show_image>
+<streaming_service>Peacock</streaming_service>
+<show_id>tt0158983</show_id>
+<show_description>Stan, Kyle, Kenny and Cartman sneak into an R-rated movie and it warps their fragile little minds. Soon their indignant parents declare war on Canada and our young heroes are Americas last hope to stop Armageddon.</show_description>
+<show_type>Adult Comedy</show_type>
+<is_movie>true</is_movie>
+</show>
+
+
+
+</content>
+
+</vino_request>
