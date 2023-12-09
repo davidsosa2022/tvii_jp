@@ -1,0 +1,56 @@
+<vino_request>
+<content>
+
+<show>
+<show_name>Leo</show_name>
+<show_image>img/ex.jpg</show_image>
+<streaming_service>Netflix</streaming_service>
+<show_rating>PG</show_rating>
+<show_year>2023</show_year>
+<show_country>United States</show_country>
+<show_id>tt5755238</show_id>
+<show_description>The last year of elementary school as seen through the eyes of a class pet. A jaded 74-year-old lizard named Leo has been stuck in the same Florida classroom for decades with his turtle terrarium-mate. When he learns that he only has one year left to live, he plans to escape to experience life on the outside, but instead gets caught up in his anxious students' problems--such as an impossibly mean substitute teacher.</show_description>
+<show_type>Animated Comedy</show_type>
+<show_trailer_source>img/leo_trailer.mp4</show_trailer_source>
+<is_movie>true</is_movie>
+
+<actors>
+
+<actor>
+<actor_name>Adam Sandler</actor_name>
+<actor_image>img/actor1.jpg</actor_image>
+</actor>
+
+<actor>
+<actor_name>Bill Burr</actor_name>
+<actor_image>img/actor2.jpg</actor_image>
+</actor>
+
+<actor>
+<actor_name>Cecily Strong</actor_name>
+<actor_image>img/actor3.jpg</actor_image>
+</actor>
+
+<actor>
+<actor_name>Jason Alexander</actor_name>
+<actor_image>img/actor4.jpg</actor_image>
+</actor>
+
+<actor>
+<actor_name>Rob Schneider</actor_name>
+<actor_image>img/actor5.jpg</actor_image>
+</actor>
+
+<actor>
+<actor_name>Allison Strong</actor_name>
+<actor_image>img/actor6.jpeg</actor_image>
+</actor>
+
+
+</actors>
+</show>
+
+
+</content>
+
+</vino_request>
